@@ -19,6 +19,27 @@
 		A7D242BE1EF1B86900E6648D /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D242BA1EF1B86900E6648D /* HttpRequest.swift */; };
 		A7D242C11EF1BD9900E6648D /* UserBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D242C01EF1BD9900E6648D /* UserBO.swift */; };
 		A7D242C31EF1BEBE00E6648D /* ExpensesBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D242C21EF1BEBE00E6648D /* ExpensesBO.swift */; };
+		A7F1B3FE1EF2557100232193 /* ExpensesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B3FD1EF2557100232193 /* ExpensesDetailViewController.swift */; };
+		A7F1B4171EF270F900232193 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B4021EF270F900232193 /* AnimatedImageView.swift */; };
+		A7F1B4181EF270F900232193 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B4031EF270F900232193 /* Box.swift */; };
+		A7F1B4191EF270F900232193 /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B4041EF270F900232193 /* CacheSerializer.swift */; };
+		A7F1B41A1EF270F900232193 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B4051EF270F900232193 /* Filter.swift */; };
+		A7F1B41B1EF270F900232193 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B4061EF270F900232193 /* Image.swift */; };
+		A7F1B41C1EF270F900232193 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B4071EF270F900232193 /* ImageCache.swift */; };
+		A7F1B41D1EF270F900232193 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B4081EF270F900232193 /* ImageDownloader.swift */; };
+		A7F1B41E1EF270F900232193 /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B4091EF270F900232193 /* ImagePrefetcher.swift */; };
+		A7F1B41F1EF270F900232193 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B40A1EF270F900232193 /* ImageProcessor.swift */; };
+		A7F1B4201EF270F900232193 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B40B1EF270F900232193 /* ImageTransition.swift */; };
+		A7F1B4211EF270F900232193 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B40C1EF270F900232193 /* ImageView+Kingfisher.swift */; };
+		A7F1B4221EF270F900232193 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B40D1EF270F900232193 /* Indicator.swift */; };
+		A7F1B4231EF270F900232193 /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B40F1EF270F900232193 /* Kingfisher.swift */; };
+		A7F1B4241EF270F900232193 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B4101EF270F900232193 /* KingfisherManager.swift */; };
+		A7F1B4251EF270F900232193 /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B4111EF270F900232193 /* KingfisherOptionsInfo.swift */; };
+		A7F1B4261EF270F900232193 /* RequrstModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B4121EF270F900232193 /* RequrstModifier.swift */; };
+		A7F1B4271EF270F900232193 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B4131EF270F900232193 /* Resource.swift */; };
+		A7F1B4291EF270F900232193 /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B4151EF270F900232193 /* ThreadHelper.swift */; };
+		A7F1B42A1EF270F900232193 /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B4161EF270F900232193 /* UIButton+Kingfisher.swift */; };
+		A7F1B44D1EF2A02C00232193 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1B44C1EF2A02C00232193 /* String+MD5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +57,28 @@
 		A7D242BA1EF1B86900E6648D /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		A7D242C01EF1BD9900E6648D /* UserBO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserBO.swift; sourceTree = "<group>"; };
 		A7D242C21EF1BEBE00E6648D /* ExpensesBO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpensesBO.swift; sourceTree = "<group>"; };
+		A7F1B3FD1EF2557100232193 /* ExpensesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpensesDetailViewController.swift; sourceTree = "<group>"; };
+		A7F1B4021EF270F900232193 /* AnimatedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImageView.swift; sourceTree = "<group>"; };
+		A7F1B4031EF270F900232193 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		A7F1B4041EF270F900232193 /* CacheSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheSerializer.swift; sourceTree = "<group>"; };
+		A7F1B4051EF270F900232193 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		A7F1B4061EF270F900232193 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		A7F1B4071EF270F900232193 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		A7F1B4081EF270F900232193 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		A7F1B4091EF270F900232193 /* ImagePrefetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePrefetcher.swift; sourceTree = "<group>"; };
+		A7F1B40A1EF270F900232193 /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		A7F1B40B1EF270F900232193 /* ImageTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransition.swift; sourceTree = "<group>"; };
+		A7F1B40C1EF270F900232193 /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
+		A7F1B40D1EF270F900232193 /* Indicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
+		A7F1B40E1EF270F900232193 /* Kingfisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kingfisher.h; sourceTree = "<group>"; };
+		A7F1B40F1EF270F900232193 /* Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kingfisher.swift; sourceTree = "<group>"; };
+		A7F1B4101EF270F900232193 /* KingfisherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherManager.swift; sourceTree = "<group>"; };
+		A7F1B4111EF270F900232193 /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
+		A7F1B4121EF270F900232193 /* RequrstModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequrstModifier.swift; sourceTree = "<group>"; };
+		A7F1B4131EF270F900232193 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		A7F1B4151EF270F900232193 /* ThreadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadHelper.swift; sourceTree = "<group>"; };
+		A7F1B4161EF270F900232193 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		A7F1B44C1EF2A02C00232193 /* String+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,11 +111,10 @@
 		A7D242921EF1A6B000E6648D /* InvestorApp */ = {
 			isa = PBXGroup;
 			children = (
+				A7F1B4001EF270F900232193 /* Utilities */,
 				A7D242A51EF1A71E00E6648D /* ApplicationLayer */,
 				A7D242A71EF1A71E00E6648D /* BusinessLayer */,
-				A7D242A81EF1A71E00E6648D /* DataAccessLayer */,
 				A7D242A91EF1A71E00E6648D /* PresentationLayer */,
-				A7D242AE1EF1A71E00E6648D /* Utilities */,
 				A7D242971EF1A6B000E6648D /* Main.storyboard */,
 				A7D2429A1EF1A6B000E6648D /* Assets.xcassets */,
 				A7D2429C1EF1A6B000E6648D /* LaunchScreen.storyboard */,
@@ -96,13 +138,6 @@
 				A7D242B51EF1B86900E6648D /* Logic */,
 			);
 			path = BusinessLayer;
-			sourceTree = "<group>";
-		};
-		A7D242A81EF1A71E00E6648D /* DataAccessLayer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataAccessLayer;
 			sourceTree = "<group>";
 		};
 		A7D242A91EF1A71E00E6648D /* PresentationLayer */ = {
@@ -135,15 +170,9 @@
 			children = (
 				A7D242AD1EF1A71E00E6648D /* HomeViewController.swift */,
 				A7D242B31EF1B4E900E6648D /* LoginViewController.swift */,
+				A7F1B3FD1EF2557100232193 /* ExpensesDetailViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		A7D242AE1EF1A71E00E6648D /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		A7D242B51EF1B86900E6648D /* Logic */ = {
@@ -163,6 +192,42 @@
 				A7D242C21EF1BEBE00E6648D /* ExpensesBO.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		A7F1B4001EF270F900232193 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A7F1B4011EF270F900232193 /* ImageLoading */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A7F1B4011EF270F900232193 /* ImageLoading */ = {
+			isa = PBXGroup;
+			children = (
+				A7F1B44C1EF2A02C00232193 /* String+MD5.swift */,
+				A7F1B4021EF270F900232193 /* AnimatedImageView.swift */,
+				A7F1B4031EF270F900232193 /* Box.swift */,
+				A7F1B4041EF270F900232193 /* CacheSerializer.swift */,
+				A7F1B4051EF270F900232193 /* Filter.swift */,
+				A7F1B4061EF270F900232193 /* Image.swift */,
+				A7F1B4071EF270F900232193 /* ImageCache.swift */,
+				A7F1B4081EF270F900232193 /* ImageDownloader.swift */,
+				A7F1B4091EF270F900232193 /* ImagePrefetcher.swift */,
+				A7F1B40A1EF270F900232193 /* ImageProcessor.swift */,
+				A7F1B40B1EF270F900232193 /* ImageTransition.swift */,
+				A7F1B40C1EF270F900232193 /* ImageView+Kingfisher.swift */,
+				A7F1B40D1EF270F900232193 /* Indicator.swift */,
+				A7F1B40E1EF270F900232193 /* Kingfisher.h */,
+				A7F1B40F1EF270F900232193 /* Kingfisher.swift */,
+				A7F1B4101EF270F900232193 /* KingfisherManager.swift */,
+				A7F1B4111EF270F900232193 /* KingfisherOptionsInfo.swift */,
+				A7F1B4121EF270F900232193 /* RequrstModifier.swift */,
+				A7F1B4131EF270F900232193 /* Resource.swift */,
+				A7F1B4151EF270F900232193 /* ThreadHelper.swift */,
+				A7F1B4161EF270F900232193 /* UIButton+Kingfisher.swift */,
+			);
+			path = ImageLoading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,13 +304,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7D242BD1EF1B86900E6648D /* BusinessLayer.swift in Sources */,
+				A7F1B41E1EF270F900232193 /* ImagePrefetcher.swift in Sources */,
 				A7D242BC1EF1B86900E6648D /* BaseBL.swift in Sources */,
+				A7F1B41C1EF270F900232193 /* ImageCache.swift in Sources */,
+				A7F1B3FE1EF2557100232193 /* ExpensesDetailViewController.swift in Sources */,
 				A7D242B41EF1B4E900E6648D /* LoginViewController.swift in Sources */,
+				A7F1B4201EF270F900232193 /* ImageTransition.swift in Sources */,
+				A7F1B4241EF270F900232193 /* KingfisherManager.swift in Sources */,
+				A7F1B41B1EF270F900232193 /* Image.swift in Sources */,
+				A7F1B41F1EF270F900232193 /* ImageProcessor.swift in Sources */,
 				A7D242B01EF1A71E00E6648D /* HomeViewController.swift in Sources */,
 				A7D242BE1EF1B86900E6648D /* HttpRequest.swift in Sources */,
+				A7F1B4251EF270F900232193 /* KingfisherOptionsInfo.swift in Sources */,
+				A7F1B4211EF270F900232193 /* ImageView+Kingfisher.swift in Sources */,
 				A7D242C31EF1BEBE00E6648D /* ExpensesBO.swift in Sources */,
+				A7F1B4291EF270F900232193 /* ThreadHelper.swift in Sources */,
+				A7F1B4221EF270F900232193 /* Indicator.swift in Sources */,
+				A7F1B41A1EF270F900232193 /* Filter.swift in Sources */,
+				A7F1B41D1EF270F900232193 /* ImageDownloader.swift in Sources */,
+				A7F1B4271EF270F900232193 /* Resource.swift in Sources */,
+				A7F1B4171EF270F900232193 /* AnimatedImageView.swift in Sources */,
+				A7F1B4261EF270F900232193 /* RequrstModifier.swift in Sources */,
+				A7F1B4191EF270F900232193 /* CacheSerializer.swift in Sources */,
 				A7D242B21EF1B36900E6648D /* ExpensesCustomCell.swift in Sources */,
+				A7F1B42A1EF270F900232193 /* UIButton+Kingfisher.swift in Sources */,
+				A7F1B4181EF270F900232193 /* Box.swift in Sources */,
 				A7D242AF1EF1A71E00E6648D /* AppDelegate.swift in Sources */,
+				A7F1B44D1EF2A02C00232193 /* String+MD5.swift in Sources */,
+				A7F1B4231EF270F900232193 /* Kingfisher.swift in Sources */,
 				A7D242C11EF1BD9900E6648D /* UserBO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +494,7 @@
 				A7D242A41EF1A6B000E6648D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
