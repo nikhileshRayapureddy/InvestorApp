@@ -10,6 +10,7 @@ import UIKit
 
 class ExpensesCustomCell: UITableViewCell {
 
+    @IBOutlet weak var imgStatus: UIImageView!
     @IBOutlet weak var imgVw: UIImageView!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblReceiptId: UILabel!

@@ -17,11 +17,6 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         super.viewDidLoad()
         UIApplication.shared.statusBarStyle = .lightContent
         // Do any additional setup after loading the view, typically from a nib.
-        
-        let vc =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-        
-        self.navigationController?.pushViewController(vc, animated: false)
-
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -37,7 +32,14 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             let dict = object as! [String:AnyObject]
             self.arrExpenses = dict["Expenses"] as! [ExpensesBO]
             let str = dict["totalAmount"] as! String
-            self.lblTotalCost.text = "₹ \(str)"
+            
+            let numberFormatter = NumberFormatter()
+            numberFormatter.numberStyle = .decimal
+            let indiaLocale = NSLocale(localeIdentifier: "en_IN")
+            numberFormatter.locale = indiaLocale as Locale!
+            let result = numberFormatter.string(from: Int(str)! as NSNumber)!
+
+            self.lblTotalCost.text = "₹ \(result)"
             self.tblExpenses.reloadData()
         }
         
@@ -57,14 +59,21 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let expenseBO = arrExpenses[indexPath.row]
         cell.lblName.text = expenseBO.name
         cell.lblDesc.text = expenseBO.Description
-        cell.lblPrice.text = "₹ \(expenseBO.amount)"
+        
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        let indiaLocale = NSLocale(localeIdentifier: "en_IN")
+        numberFormatter.locale = indiaLocale as Locale!
+        let result = numberFormatter.string(from: Int(expenseBO.amount)! as NSNumber)!
+
+        cell.lblPrice.text = "₹ \(result)"
         let string = expenseBO.created_at
         
         let dateFormatter = DateFormatter()
         let tempLocale = dateFormatter.locale // save locale temporarily
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let date = dateFormatter.date(from: string)!
-        dateFormatter.dateFormat = "MMM dd yyyy"
+        dateFormatter.dateFormat = "MMM dd, yyyy"
         dateFormatter.locale = tempLocale // reset the locale
         let dateString = dateFormatter.string(from: date)
 
@@ -79,36 +88,50 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         if expenseBO.validate == "0"
         {
             cell.lblStatus.text = "Waiting for validation"
+            cell.lblStatus.textColor = UIColor(red: 255.0/255.0, green: 184.0/255.0, blue: 14.0/255.0, alpha: 1)
+            cell.imgStatus.image = #imageLiteral(resourceName: "not")
         }
         else if expenseBO.validate == "1"
         {
             if expenseBO.approved == "0"
             {
                 cell.lblStatus.text = "Waiting for approval"
+                cell.imgStatus.image = #imageLiteral(resourceName: "not")
+                cell.lblStatus.textColor = UIColor(red: 255.0/255.0, green: 184.0/255.0, blue: 14.0/255.0, alpha: 1)
             }
             else if expenseBO.approved == "1"
             {
                 if expenseBO.status == "0"
                 {
                     cell.lblStatus.text = "Waiting for payment to be made"
+                    cell.imgStatus.image = #imageLiteral(resourceName: "not")
+                    cell.lblStatus.textColor = UIColor(red: 255.0/255.0, green: 184.0/255.0, blue: 14.0/255.0, alpha: 1)
                 }
                 else if expenseBO.status == "1"
                 {
                     cell.lblStatus.text = "Paid"
+                    cell.imgStatus.image =  #imageLiteral(resourceName: "approved")
+                    cell.lblStatus.textColor = UIColor(red: 125.0/255.0, green: 194.0/255.0, blue: 127.0/255.0, alpha: 1)
                 }
                 else if expenseBO.status == "2"
                 {
                     cell.lblStatus.text = "Rejected"
+                    cell.lblStatus.textColor = UIColor(red: 244.0/255.0, green: 67.0/255.0, blue: 54.0/255.0, alpha: 1)
+                    cell.imgStatus.image = #imageLiteral(resourceName: "rej")
                 }
             }
             else if expenseBO.approved == "2"
             {
                 cell.lblStatus.text = "Rejected"
+                cell.imgStatus.image = #imageLiteral(resourceName: "rej")
+                cell.lblStatus.textColor = UIColor(red: 244.0/255.0, green: 67.0/255.0, blue: 54.0/255.0, alpha: 1)
             }
         }
         else if expenseBO.validate == "2"
         {
             cell.lblStatus.text = "Rejected"
+            cell.imgStatus.image = #imageLiteral(resourceName: "rej")
+            cell.lblStatus.textColor = UIColor(red: 244.0/255.0, green: 67.0/255.0, blue: 54.0/255.0, alpha: 1)
         }
 
         
@@ -131,6 +154,20 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         self.navigationController?.pushViewController(vc, animated: false)
 
     }
+    
+    @IBAction func btnLogoutClicked(_ sender: UIButton) {
+        if self.navigationController?.viewControllers.count == 1
+        {
+            let vc =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else
+        {
+            let _ = self.navigationController?.popViewController(animated: true)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

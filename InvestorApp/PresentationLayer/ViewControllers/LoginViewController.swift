@@ -7,16 +7,17 @@
 //
 
 import UIKit
-
+let LOGIN_STATUS = "isAlreadyLogin"
 class LoginViewController: UIViewController,ParserDelegate {
 
+    @IBOutlet weak var btnRememberMe: UIButton!
     @IBOutlet weak var txtFldEmail: UITextField!
     @IBOutlet weak var txtFldPwd: UITextField!
     @IBOutlet weak var btnLogin: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        txtFldEmail.text = "srikanth@taksykraft.com"
-        txtFldPwd.text = "TaksyKraft"
+//        txtFldEmail.text = "srikanth@taksykraft.com"
+//        txtFldPwd.text = "TaksyKraft"
         // Do any additional setup after loading the view.
     }
 
@@ -29,12 +30,34 @@ class LoginViewController: UIViewController,ParserDelegate {
     func parsingFinished(_ object: AnyObject?, withTag tag: NSInteger) {
         app_delegate.removeloder()
         DispatchQueue.main.async {
-           let _ = self.navigationController?.popViewController(animated: true)
+            
+            if self.navigationController?.viewControllers.count == 1
+            {
+                let vc =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            else
+            {
+                let _ = self.navigationController?.popViewController(animated: true)
+            }
         }
         
     }
     func parsingError(_ error: String?, withTag tag: NSInteger) {
         app_delegate.removeloder()
+    }
+    @IBAction func btnRememberMeClicked(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        if sender.isSelected
+        {
+            UserDefaults.standard.set(true, forKey: LOGIN_STATUS)
+        }
+        else
+        {
+            UserDefaults.standard.set(false, forKey: LOGIN_STATUS)
+        }
+        UserDefaults.standard.synchronize()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -12,10 +12,26 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var navCtrl = UINavigationController()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        var vc = UIViewController()
+        let isLogin = UserDefaults.standard.bool(forKey: LOGIN_STATUS)
+        if isLogin
+        {
+            vc =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        }
+        else
+        {
+            vc =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        }
+        
+        navCtrl = UINavigationController(rootViewController: vc)
+        navCtrl.isNavigationBarHidden = true
+        self.window?.rootViewController = navCtrl
+
         return true
     }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7B727F41EF3C198002B59F2 /* ImageDetailPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B727F31EF3C198002B59F2 /* ImageDetailPopUp.swift */; };
+		A7B727F61EF3C1A4002B59F2 /* ImageDetailPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B727F51EF3C1A4002B59F2 /* ImageDetailPopUp.xib */; };
 		A7D242991EF1A6B000E6648D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D242971EF1A6B000E6648D /* Main.storyboard */; };
 		A7D2429B1EF1A6B000E6648D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7D2429A1EF1A6B000E6648D /* Assets.xcassets */; };
 		A7D2429E1EF1A6B000E6648D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D2429C1EF1A6B000E6648D /* LaunchScreen.storyboard */; };
@@ -43,6 +45,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7B727F31EF3C198002B59F2 /* ImageDetailPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailPopUp.swift; sourceTree = "<group>"; };
+		A7B727F51EF3C1A4002B59F2 /* ImageDetailPopUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageDetailPopUp.xib; sourceTree = "<group>"; };
 		A7D242901EF1A6B000E6648D /* InvestorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D242981EF1A6B000E6648D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7D2429A1EF1A6B000E6648D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7B727F21EF3C172002B59F2 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				A7B727F31EF3C198002B59F2 /* ImageDetailPopUp.swift */,
+				A7B727F51EF3C1A4002B59F2 /* ImageDetailPopUp.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		A7D242871EF1A6AF00E6648D = {
 			isa = PBXGroup;
 			children = (
@@ -143,8 +156,8 @@
 		A7D242A91EF1A71E00E6648D /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				A7B727F21EF3C172002B59F2 /* CustomViews */,
 				A7D242AA1EF1A71E00E6648D /* CustomCells */,
-				A7D242AB1EF1A71E00E6648D /* CustomViews */,
 				A7D242AC1EF1A71E00E6648D /* ViewControllers */,
 			);
 			path = PresentationLayer;
@@ -156,13 +169,6 @@
 				A7D242B11EF1B36900E6648D /* ExpensesCustomCell.swift */,
 			);
 			path = CustomCells;
-			sourceTree = "<group>";
-		};
-		A7D242AB1EF1A71E00E6648D /* CustomViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		A7D242AC1EF1A71E00E6648D /* ViewControllers */ = {
@@ -262,8 +268,8 @@
 				TargetAttributes = {
 					A7D2428F1EF1A6AF00E6648D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = UDN678Y5PY;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 767WDHBUJ6;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -293,6 +299,7 @@
 				A7D2429E1EF1A6B000E6648D /* LaunchScreen.storyboard in Resources */,
 				A7D2429B1EF1A6B000E6648D /* Assets.xcassets in Resources */,
 				A7D242991EF1A6B000E6648D /* Main.storyboard in Resources */,
+				A7B727F61EF3C1A4002B59F2 /* ImageDetailPopUp.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +329,7 @@
 				A7F1B4221EF270F900232193 /* Indicator.swift in Sources */,
 				A7F1B41A1EF270F900232193 /* Filter.swift in Sources */,
 				A7F1B41D1EF270F900232193 /* ImageDownloader.swift in Sources */,
+				A7B727F41EF3C198002B59F2 /* ImageDetailPopUp.swift in Sources */,
 				A7F1B4271EF270F900232193 /* Resource.swift in Sources */,
 				A7F1B4171EF270F900232193 /* AnimatedImageView.swift in Sources */,
 				A7F1B4261EF270F900232193 /* RequrstModifier.swift in Sources */,
@@ -453,11 +461,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UDN678Y5PY;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Taksykraft Info Technologies Private Limited (767WDHBUJ6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Taksykraft Info Technologies Private Limited (767WDHBUJ6)";
+				DEVELOPMENT_TEAM = 767WDHBUJ6;
 				INFOPLIST_FILE = InvestorApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Nikhil.InvestorApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taksykraft.Investor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2d231eb0-9a8e-452b-88e4-c274164127a4";
+				PROVISIONING_PROFILE_SPECIFIER = Investor_Dist;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -466,11 +480,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UDN678Y5PY;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Taksykraft Info Technologies Private Limited (767WDHBUJ6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Taksykraft Info Technologies Private Limited (767WDHBUJ6)";
+				DEVELOPMENT_TEAM = 767WDHBUJ6;
 				INFOPLIST_FILE = InvestorApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Nikhil.InvestorApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taksykraft.Investor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2d231eb0-9a8e-452b-88e4-c274164127a4";
+				PROVISIONING_PROFILE_SPECIFIER = Investor_Dist;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
